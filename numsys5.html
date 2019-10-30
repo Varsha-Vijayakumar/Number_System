@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <h1>2,6,8,16,30,54,___</h1>
+    <div id="id1"></div>
+    <script>
+        var a = 0, b = 2, c = 6;
+        document.getElementById("id1").innerHTML = b + "<span> </span>" + c + "<span> </span>";
+        // document.getElementById("id1").innerHTML=c<br>";
+        for (i = 0; i < 10; i++) {
+            var sum = a + b + c;
+            document.getElementById("id1").innerHTML += sum + "<span> </span>";
+            a = b;
+            b = c;
+            c = sum;
+        }
+    </script>
+</body>
+
+</html>
